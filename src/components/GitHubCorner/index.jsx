@@ -43,6 +43,7 @@ const SVGWrapper = styled.svg`
 export default function GitHubCorner({ projectUrl }) {
   return (
     <Wrapper>
+      {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
       <a href={projectUrl} target="_blank" rel="noreferrer">
         <SVGWrapper
           className="githubCorner"

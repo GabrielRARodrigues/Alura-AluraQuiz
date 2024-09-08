@@ -8,5 +8,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "ignoreRefs": true,
+        "allowArrowFunctions": true,
+        "allowFunctions": true,
+        "allowBind": false,
+        "ignoreDOMComponents": true
+      }
+    ]
+  }
 }
